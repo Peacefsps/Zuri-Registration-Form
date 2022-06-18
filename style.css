@@ -6,9 +6,9 @@
     font-family: Poppins;
 }
 .main-body {
-    background-color: rgb(14, 14, 14);
-    /* background-image: url('images/bg-intro-desktop.png'); */
-    padding: 100px 150px;
+    background-image: url('images/bg-intro-desktop.png');
+    padding: 50px 150px;
+    /* overflow: hidden; */
 }
 .main-box {
     display: flex;
@@ -16,21 +16,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: hsl(0, 100%, 74%);
-    padding: 38px 0;
+    padding: 38px 20px;
     align-items: center;
     justify-content: space-evenly;
 }
 .left-box {
     color: rgb(255, 253, 250);
+    width: 40%;
 }
 .left-box h1 {
     margin-bottom: 16px;
-    width: 300px;
+    /* width: 300px; */
     line-height: 1.2em;
 }
 .left-box p {
     font-size: 16px;
-    width: 500px;
 }
 .right-box button{
     background-color: hsl(248, 32%, 49%);
@@ -49,7 +49,6 @@
     background-color: rgb(255, 255, 255);
     padding: 28px;
     border-radius: 8px;
-    width: 100%;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
 }
 .form-box input[type=text], input[type=email], input[type=password] {
@@ -57,10 +56,10 @@
     padding: 10px;
     border: 1px solid rgb(183, 183, 183);
     margin-bottom: 12px;
-    
 }
 .form-box input:focus {
     outline: 1px solid rgb(167, 167, 167);
+    border-radius: 6px;
 }
 .form-box input[type=submit] {
     border-radius: 6px;
@@ -92,19 +91,19 @@
         background-size: cover;
         background-color: hsl(0, 100%, 74%);
         padding: 50px 18px 20px 18px;
+        text-align: center;
+    }
+    .left-box {
+        width: 100%;
     }
     .left-box h1 {
         font-size: 32px;
-        /* margin-top: 38px; */
         display: block;
-        margin: 0 auto;
+        margin: 16px auto;
     }
     .left-box p {
         font-size: 14px;
-        width: 300px;
-        /* margin-bottom: 18px; */
-        display: block;
-        margin: 18px auto;
+        margin-bottom: 16px;
     }
     .form-box {
         margin-bottom: 28px;
@@ -115,15 +114,9 @@
     .main-body {
         padding: 100px 50px
     }
-    .left-box p {
-        width: 350px;
-    }
 }
 @media screen and (width: 768px) {
     .main-body {
         padding: 80px 15px
-    }
-    .left-box p {
-        width: 300px;
     }
 }
